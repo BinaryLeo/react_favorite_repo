@@ -48,6 +48,8 @@ function App() {
     </>
   )
 }
+
+
 const Button = styled.button` // styled components are used to style the button
   background: transparent;
   border-radius: 3px;
@@ -55,12 +57,14 @@ const Button = styled.button` // styled components are used to style the button
   color: #18F8D7;
   margin: 0 1em;
   padding: 0.25em 1em;
+
 `
 const LI = styled.li` // styled components are used to style the list items
   list-style: none;
-  margin: 0.5em 0;
+  margin: 0.8em 2em 0.5em -0.5em;
   border: 1px solid #fff;
   text-transform: lowercase;
+
 `
 const A = styled.a`
   text-decoration: none;
