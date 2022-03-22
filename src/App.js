@@ -8,7 +8,7 @@ function App() {
       const response = await fetch(
         'https://api.github.com/users/binaryleo/repos',
       )
-      const data = await response.json()
+      const data = await response.json() // return data in json format
       setList(data)
     }
     fetchData()
@@ -38,8 +38,8 @@ function App() {
                   Favorite
                 </Button>
                 {list.favorite && <span> ⭐ </span>}
-                <a href = {list.html_url}>{list.name}</a>
-                <span> - {list.description}</span>
+                <A href = {list.html_url}>{list.name}</A>
+                <Span> - {list.description}</Span>
               </p>
             </LI>
           )
@@ -51,18 +51,24 @@ function App() {
 const Button = styled.button` // styled components are used to style the button
   background: transparent;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  border: 2px solid #18F8D7;
+  color: #18F8D7;
   margin: 0 1em;
   padding: 0.25em 1em;
 `
 const LI = styled.li` // styled components are used to style the list items
   list-style: none;
   margin: 0.5em 0;
-  &:before {
-   
-    margin-right: 0.5em;
-  }
+  border: 1px solid #fff;
   text-transform: lowercase;
+`
+const A = styled.a`
+  text-decoration: none;
+  color: #fff;`
+ 
+ const Span = styled.span`
+  color: #18F8D7;
+  font-size: 0.8em;
+  margin-left: 0.5em;
 `
 export default App
