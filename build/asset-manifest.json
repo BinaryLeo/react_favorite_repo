@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/favorite_repo/static/css/main.264c1421.css",
+    "main.js": "/favorite_repo/static/js/main.5121bb28.js",
+    "index.html": "/favorite_repo/index.html",
+    "main.264c1421.css.map": "/favorite_repo/static/css/main.264c1421.css.map",
+    "main.5121bb28.js.map": "/favorite_repo/static/js/main.5121bb28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.264c1421.css",
+    "static/js/main.5121bb28.js"
+  ]
+}
